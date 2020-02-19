@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>gig</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster|Open+Sans+Condensed:300|Pacifico|Schoolbell|ZCOOL+KuaiLe" rel="stylesheet">
+	
+</head>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background: gray;
+}
+.container{
+   position: absolute;
+	top: 10%;
+	left: 40%;
+}
+.center{
+   position: relative;
+}
+.box{
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+	height: 90px;
+	background: white;
+
+	background: transparent;
+}
+.box h3{
+	font-size: 35px;
+	font-family:cursive;
+	color:#2C2C;
+	cursor: pointer;
+}
+.contant{
+		position: absolute;
+
+		z-index: -1;
+	width: 200px;
+	height: 250px;
+	background: #2C2C2C;
+	border-radius: 5px;
+	box-shadow: 0px 2px 20px 5px #2C2;
+	opacity: 0;
+	transform: translateY(0px);
+	transition: all .5s ease;
+}
+.contant h3{
+	font-family: lobster;
+	font-size: 25px;
+	padding-top: 10px;
+	text-align: center;;
+	color:gold; 
+}
+.contant p{
+	font-family: lobster;
+	font-size: 16px;
+	padding: 22px;
+	
+	color:white;
+}
+button{
+	background: green;
+	border: none;
+	padding: 8px;
+	border-radius: 2px;
+	margin-left: 50px;
+
+}
+button a{
+	color: whitesmoke;
+	font-family: sans-serif;
+}
+
+    
+
+</style>
+<body>
+	<section class="container">
+
+	 <div class="center">
+	 	<div class="box">
+	 		<h3>HOVER ME</h3>
+	 	</div>
+	 	<div class="contant">
+	 		<h3>huge Practice</h3>
+	 		<p>We are and will be a university where design and social research drive approaches to studying issues of our time,such as democracy,urbanization,</p>
+	 		<button>
+	 			<a href="">Read more</a>
+	 		</button>
+	 	</div>
+	 
+	 </div>
+	 
+	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+        
+        $(document).ready(function(){
+
+        	$(".box").hover(function(){
+        		$(".contant").css({"opacity": "1", "transform": "translateY(70px)"});
+
+        	}, function(){
+        		$(".contant").css({"opacity":"0", "transform": "translateY(-100px)"});
+        	});
+        });		
+
+	</script>
+</body>
+</html>

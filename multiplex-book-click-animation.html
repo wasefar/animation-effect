@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>gig</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Dancing+Script|Lobster|Open+Sans+Condensed:300|Pacifico|Wendy+One" rel="stylesheet">
+	<link rel="icon" href="img/Screenshot_6.png" type="image/icon type">
+</head>
+<style>
+	*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background: gray;
+}
+.container{
+   position: absolute;
+	top: 30%;
+	left: 40%;
+
+	
+}
+.box{
+   
+   position: relative;
+   cursor: pointer;
+   
+   transform: perspective(900px) rotateX(45deg);
+ 
+
+
+}
+.contant-one{
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	background: #ccc;
+	border-top: 3px solid whitesmoke;
+    border-left: 8px solid whitesmoke;
+    border-radius: 7px 0 0 0px;
+    box-shadow: -13px 39px 18px 0px #2C2C2C;
+   transform-origin: left;
+   transform: perspective(2000px) rotateY(0deg);
+   transition: .5s;
+
+
+}
+.contant-two{
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	background: green;
+	border-top: 3px solid whitesmoke;
+    border-left: 8px solid whitesmoke;
+     border-radius: 7px 0 0 0px;
+     box-shadow: -13px 39px 18px 0px #2C2C2C;
+     transform-origin: left;
+   transform: perspective(2000px) rotateY(0deg);
+   transition: .5s;
+     
+}
+.contant-three{
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	background: blue;
+	border-top: 3px solid whitesmoke;
+    border-left: 8px solid whitesmoke;
+     border-radius: 7px 0 0 0px;
+     box-shadow: -13px 39px 18px 0px #2C2C2C;
+     transform-origin: left;
+   transform: perspective(2000px) rotateY(0deg);
+   transition: .5s;
+    
+}
+.contant-fore{
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	background: black;
+	border-top: 3px solid whitesmoke;
+    border-left: 8px solid whitesmoke;
+     border-radius: 7px 0 0 0px;
+     box-shadow: -13px 39px 18px 0px #2C2C2C;
+     transform-origin: left;
+   transform: perspective(2000px) rotateY(0deg);
+   transition: .5s;
+    
+}
+.contant-five{
+
+    position: absolute;
+	width: 200px;
+	height: 250px;
+	background: #2C2C2C;
+	border-top: 2px solid #ddd;
+    border-left: 8px solid #ddd;
+     border-right: 7px solid #151515;
+     border-radius: 7px 0 0 5px;
+	box-shadow: -13px 39px 18px 0px #2C2C2C;
+	transform-origin: left;
+   transform: perspective(2000px) rotateY(0deg);
+   transition: .5s;
+
+	
+}
+.contant-five h3{
+	font-family: lobster;
+	font-size: 35px;
+	text-align: center;
+	padding-top: 50px;
+	color:yellow;
+}
+.contant-five p{
+	font-family: lobster;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 12px;
+	color:yellow;
+}
+.contant-fore h3{
+	font-family: lobster;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 50px;
+	color:	#fff;
+
+}
+.contant-fore p{
+	font-family: lobster;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 50px;
+	color:	#fff;
+}
+.contant-three h3{
+	font-family: lobster;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 40px;
+	color:	yellow;
+
+}
+.contant-three p{
+	font-family: lobster;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 25px;
+	color:	yellow;
+}
+.contant-two h3{
+	font-family: lobster;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 40px;
+	color:	#293579;
+
+}
+.contant-two p{
+	font-family: lobster;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 25px;
+	color:	#293579;
+}
+.contant-one h3{
+	font-family: sans-serif;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 40px;
+	color:	#151515;
+
+}
+
+.minibox{
+	position: absolute;
+	bottom: -265px;
+	left: 0;
+	z-index: 1;
+	width: 200px;
+	height: 25px;
+	background: #fff;
+	border-top: 5px solid #151515;
+    border-left: 5px solid #151515;
+    border-bottom: 5px solid #151515;
+
+    border-radius: 25px 45px 0 48px;
+	
+}
+.sidebox{
+	position: absolute;
+    top: 10px;
+    right: -213px;
+    width: 23px;
+    height: 255px;
+    background: #fff;
+    border-right: 7px solid #151515;
+    border-bottom: 5px solid #000;
+    border-radius: 0px 7px 5px 0px;
+}
+}
+</style>
+<body>
+	<section class="container">
+	   <div class="box">
+	       <div class="sidebox"></div>
+	   	   <div class="color-box"></div>
+	   	   <div class="contant-one"><h3>Please F5 press closeing the book <br><br>wasef ahmed...</h3></div>
+	   	     <div class="contant-two"><h3>Thank you for <br><br>watching my book</h3><p>Click next page</p></div>
+	   	       <div class="contant-three"><h3>Multiplex book desgin by <br><br>HTML,CSS,JS</h3><p>Click the next page</div>
+	   	         <div class="contant-fore"><h3>Welcome to our multiplex book</h3><p>Click Me To Next Page</p></div>
+	   	            <div class="contant-five"><h3>Multiplex</h3><p>Click Opening Book</p></div>
+	   		<div class="minibox"></div>
+	   		
+
+	   
+	   
+	   	</div>
+
+	   </div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script>
+		$(document).ready(function(){
+
+		   $(".contant-five").click(function(){
+		   		$(".contant-five").css({"transform": "perspective(2000px) rotateY(-88deg)"});
+		   		
+		   });
+
+		   $(".contant-fore").click(function(){
+		   		$(".contant-fore").css({"transform": "perspective(2000px) rotateY(-87deg)"});
+		   		
+		   });
+
+		   $(".contant-three").click(function(){
+		   		$(".contant-three").css({"transform": "perspective(2000px) rotateY(-86deg)"});
+		   		
+		   });
+
+		   $(".contant-two").click(function(){
+		   		$(".contant-two").css({"transform": "perspective(2000px) rotateY(-85deg)"});
+		   		
+		   });
+
+		   $(".contant-one").click(function(){
+		   		$(".contant-one").css({"transform": "perspective(2000px) rotateY(0deg)"});
+		   		
+		   });
+
+		   
+
+
+		});
+	</script>
+	
+	
+</body>
+</html>
